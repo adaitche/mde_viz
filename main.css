@@ -1,0 +1,32 @@
+body {
+    margin: 1em auto;
+    max-width: 50em;
+    font-family: Verdana, sans-serif;
+    color: #333;
+    line-height: 1.5;
+}
+
+.row {
+    display: flex;
+}
+
+.row div:first-child {
+    width: 8em;
+}
+
+.row div {
+    padding: 0 1em;
+}
+
+.slider {
+    width: 31em;
+}
+
+#chart {
+    padding: 1em 0;
+}
+
+label {
+    text-align: right;
+}
+

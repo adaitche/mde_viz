@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Area Fill</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="uPlot.min.css" />
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <div class="row">
+            <div>Standard Error</div>
+            <div>
+                <input
+                    id="se-input"
+                    class="slider"
+                    type="range"
+                    min="0.1"
+                    max="2"
+                    step="0.01"
+                    value="1"
+                />
+            </div>
+            <div id="se-display">
+            </div>
+        </div>
+
+        <div class="row">
+            <div>True Effect Size</div>
+            <div>
+                <input
+                    id="delta-input"
+                    class="slider"
+                    type="range"
+                    min="0.0"
+                    max="6"
+                    step="0.1"
+                    value="2"
+                />
+            </div>
+            <div id="delta-display">
+            </div>
+        </div>
+
+        <div class="row">
+            <div>Power</div>
+            <div id="power-display"></div>
+        </div>
+
+        <div class="row">
+            <div>Fix power</div>
+            <div>
+                <input id="fixpower" type="checkbox" />
+            </div>
+        </div>
+
+        <div id="chart-container">
+            <div id="chart"></div>
+        </div>
+
+        <script src="uPlot.iife.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
